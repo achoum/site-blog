@@ -11,7 +11,7 @@
 <p>For those who don’t know, the <strong>reverse polish notation</strong> (or RPN) is an old way to write mathematical equations. Some of you might still have calculators with RPN. RPN works with a stack and a list of operators. The user puts "things" (generally numbers) in the stack, and then call an operator. The operator takes the last elements of the stack, use them to compute some operation, and then it pushes back the result in the stack. Depending on the operator more or less elements will be taken from the stack. For example + takes two elements from the stack, while sin (sinus) only takes one.</p>
 <p>For example <code>5 8 +</code> computes the sum of 5 and 8. In other words, <code>5 8 2 + *</code> computes <code>(8+2)*5=50</code>.</p>
 <p>The picture shows an old HP-65 that used RPN. When I was a kid, my father used to have one. Since the calculator erases all it memory every time it is shutdown, there is a little magnetic band (with the same dimensions as a chewing gum) that we put on one side of the calculator. The calculator then automatically drags the magnetic band with a little motor, until it exits on the other side with the content of the calculators memory written on it.</p>
-<p><img src="2_polish/HP-65-150x150.jpg"></p>
+<p><img src="2_polish/HP-65.jpg"></p>
 <p>One nice property of the RPN is that it does not require parenthesis. Also, it has this "indescriptible" flow that makes it enjoyable to use.</p>
 <p>However, RPN is also quite difficult to debug or follow. For example, try to guess what is the result of <code>4 5 6 7 8 * / + 1 +</code>?</p>
 <p>The answer is <code>0</code>. The details are <code>4 ( 5 + ( 6 / (7 * 8 ) ) ) + 1 = 0</code> with integer rounding.</p>
